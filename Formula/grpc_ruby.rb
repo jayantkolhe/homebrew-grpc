@@ -1,5 +1,3 @@
-require 'rubygems'
-
 class GrpcRuby < Formula
   homepage "http://www.grpc.io/"
   head "https://github.com/grpc/grpc.git"
@@ -10,7 +8,7 @@ class GrpcRuby < Formula
   depends_on "grpc"
 
   def install
-    gem 'grpc'
+    system 'gem', 'install', 'grpc'
   end
 
   test do

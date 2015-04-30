@@ -67,4 +67,4 @@ main() {
     __grpc_install_with_brew;
 }
 
-main
+main "$@"

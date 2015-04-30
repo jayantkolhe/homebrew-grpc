@@ -4,7 +4,7 @@
 #
 # prerequisites: Homebrew(Mac), Linuxbrew(Linux) is installed.
 #
-# Usage: curl -fsSL https://raw.githubusercontent.com/tbetbetbe/homebrew-grpc/master/scripts/install_grpc.sh | bash -
+# Usage: curl -fsSL https://raw.githubusercontent.com/tbetbetbe/homebrew-grpc/master/scripts/install_core | bash -
 
 __grpc_check_for_brew() {
     which 'brew' >> /dev/null || {

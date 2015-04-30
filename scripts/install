@@ -109,6 +109,8 @@ __grpc_install_pkgs() {
             echo "installing grpc $pkg";
             local cmd="__grpc_install_${pkg}_pkg";
             $cmd;
+        else
+            echo "did not install package for ${pkg}; this what not known"
         fi
     done
 }

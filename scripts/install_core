@@ -71,7 +71,7 @@ __grpc_install_ruby() {
 
 main() {
     echo "Args were: $@";
-    if [ "$@" ~= 'ruby' ] then;
+    if [ "$@" =~ 'ruby' ] then;
        echo "ruby required! "
        __grpc_install_ruby;
     fi

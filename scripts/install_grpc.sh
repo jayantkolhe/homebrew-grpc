@@ -21,7 +21,7 @@ __grpc_check_for_brew() {
 
 
 __grpc_brew_install() {
-    local pkg=$1
+    local pkg=${!#}
     if brew list -1 | grep -q "^${pkg}\$"; then
         echo "$pkg is already installed"
         return;

@@ -71,12 +71,12 @@ __grpc_install_ruby() {
 
 main() {
     echo "Args were: $@";
-    if [ "$@" =~ 'ruby' ] then;
-       echo "ruby required! "
-       __grpc_install_ruby;
-    fi
     __grpc_check_for_brew || exit 1;
     __grpc_install_with_brew;
+    if [[ "$@" =~ 'ruby' ]]; then
+       echo "ruby required! ";
+       __grpc_install_ruby;
+    fi
 }
 
 main "$@"

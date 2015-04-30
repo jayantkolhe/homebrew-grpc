@@ -62,7 +62,7 @@ __grpc_install_with_brew() {
 }
 
 main() {
-    echo "Args were: $@"
+    echo "Args were: $@";
     __grpc_check_for_brew || exit 1;
     __grpc_install_with_brew;
 }
